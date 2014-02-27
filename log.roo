@@ -1,0 +1,20 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-02-23 00:32:28
+project --topLevelPackage com.bia
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.Employee --testAutomatically
+field string --fieldName displayName --notNull
+field string --fieldName userName --sizeMin 3 --sizeMax 30 --notNull
+field string --fieldName department
+solr setup
+solr all
+service all --interfacePackage com.bia.services
+logging setup --level INFO
+// script --file expenses.roo
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-02-23 00:32:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2014-02-23 00:34:22
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2014-02-23 00:36:18
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-02-23 02:24:43
+hint
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-02-23 02:25:01
